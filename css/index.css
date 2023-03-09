@@ -16,8 +16,8 @@ body{
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: #ffffff;
-    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    /* background: #ffffff; */
+    box-shadow: 0 5px 10px rgba(0,0,0,.50);
     padding: 0px 7%;
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@ header{
 header .logo{
     font-weight: bolder;
     font-size: 25px;
-    color: #333;
+    color: white;
 }
 
 header .navbar ul{
@@ -43,12 +43,12 @@ header .navbar ul li{
 header .navbar ul li a{
     font-size: 20px;
     padding: 20px;
-    color: #333;
+    color: white;
     display: block;
 }
 
 header .navbar ul li a:hover{
-    background: #333;
+    background: black;
     color: #fff;
 }
 
@@ -56,13 +56,13 @@ header .navbar ul li ul{
     position: absolute;
     left: 0;
     width: 200px;
-    background: #fff;
+    background: rgba(0,0,0,.75);
     display: none;
 }
 
 header .navbar ul li ul li{
     width: 100%;
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0,0,0,.55);
 }
 
 header .navbar ul li ul li ul{
@@ -85,7 +85,7 @@ header .navbar ul li:hover > ul{
 
 header label{
     font-size: 20px;
-    color: #333;
+    color: #fff;
     cursor: pointer;
     display: none;
 }
@@ -110,8 +110,8 @@ header label{
     header .navbar{
         position: absolute;
         top: 100%; left: 0; right: 0;
-        background: #fff;
-        border-top: 1px solid rgba(0,0,0,.1);
+        background: rgba(0,0,0,.75);
+        border-top: 1px solid rgba(0,0,0,.55);
         display: none;
     }
 
@@ -125,7 +125,7 @@ header label{
     }
 
     header .navbar ul li ul li{
-        background: #eee;
+        background: rgba(0,0,0,.75);
     }
 
     header .navbar ul li ul li ul{
